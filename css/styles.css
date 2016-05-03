@@ -1,0 +1,36 @@
+html,
+body {
+  min-width: 300px;
+}
+.no-padding {
+  padding: 0 !important;
+}
+.no-margin {
+  margin: 0 !important;
+}
+.container header {
+  text-align: center;
+}
+.container header img {
+  margin: 0 auto;
+}
+.container .section {
+  margin: 50px auto 0 auto;
+}
+.container .section h2.heading {
+  border-bottom: 2px solid #000;
+  line-height: 0;
+  margin: 0 0 40px 0;
+}
+.container .section h2.heading span {
+  background: #fff;
+  padding: 0 15px 0 0;
+  text-transform: uppercase;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
+  letter-spacing: -1px;
+  font-size: 30px;
+}
+.container .section#what .row {
+  margin-bottom: 40px;
+}
