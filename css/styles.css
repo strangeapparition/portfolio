@@ -1,6 +1,16 @@
 html,
 body {
   min-width: 300px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+h2 {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
+}
+p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
 }
 .no-padding {
   padding: 0 !important;
@@ -26,8 +36,6 @@ body {
   background: #fff;
   padding: 0 15px 0 0;
   text-transform: uppercase;
-  font-family: 'Rubik', sans-serif;
-  font-weight: 700;
   letter-spacing: -1px;
   font-size: 30px;
 }
