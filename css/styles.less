@@ -70,10 +70,14 @@ p {
         margin-bottom: 40px;
       }
 
-      .hover-test {
+      .hover-link {
 
         a {
           display: block;
+
+          img {
+            width: 100%;
+          }
 
           div {
             opacity: 0;
@@ -84,6 +88,8 @@ p {
             padding: 10%;
             background-color: rgba(0, 0, 0, 0.6);
             color: #fff;
+            z-index: 2;
+            top: 0;
             transition: opacity 500ms;
           }
 
@@ -91,8 +97,18 @@ p {
             opacity: 1;
           }
 
-          img {
-            width: 100%;
+          @media (max-width: 767px) {
+            div {
+              opacity: 1;
+              position: static;
+              text-align: left;
+              width: 100%;
+              height: initial;
+              padding: 0;
+              background-color: transparent;
+              color: #333;
+              z-index: 0;
+            }
           }
         }
       }
