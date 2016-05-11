@@ -46,6 +46,9 @@ p {
   background: #fff;
   padding: 0 15px 0 0;
 }
+.container .section#who img {
+  padding-bottom: 20px;
+}
 .container .section#what .row {
   margin-bottom: 40px;
 }
