@@ -87,3 +87,10 @@ p {
     z-index: 0;
   }
 }
+.container .section#contact {
+  margin-bottom: 30px;
+}
+footer {
+  margin: 10px;
+  text-align: center;
+}
