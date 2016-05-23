@@ -21,77 +21,114 @@
     <![endif]-->
   </head>
   <body>
+    <header class="header to-hide">
+      <div class="container">
+        <h1 class="name">Kim Hajduch</h1>
+        <!-- <img class="col-md-6 col-md-push-3 col-sm-6 col-sm-push-3 col-xs-12" src="https://unsplash.it/1000/160" alt=""> -->
+      </div>
+    </header>
+
     <div class="container">
-      <header class="header row">
-        <img class="col-md-6 col-md-push-3 col-sm-6 col-sm-push-3 col-xs-12" src="https://unsplash.it/1000/160" alt="">
-      </header>
+      <div class="row">
+        <!-- right nav -->
+        <div class="col-md-2 col-sm-3 col-xs-12 pull-right">
+          <nav class="navbar navbar-default" role="navigation">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand name">Kim Hajduch</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav nav-pills cl-effect-1">
+                <!-- <li class="filter active"><a id="filter-all">All</a></li> -->
+                <li class="filter active"><a id="filter-web">Web</a></li>
+                <li class="filter"><a id="filter-print">Print</a></li>
+                <li class="filter"><a id="filter-art">Art</a></li>
+                <li class="about"><a href="#who">About</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
 
-      <!-- Who I Am -->
-      <div id="who" class="section">
-        <h2 class="heading"><span>Who I Am</span></h2>
-        <div class="row">
-          <img class="col-md-3 col-md-push-8 col-sm-6 col-sm-push-6 col-xs-12" src="images/kim-1976.jpg" alt="">
-          <div class="content col-md-6 col-md-pull-2 col-sm-6 col-sm-pull-6">
-            <p>Hi! My name is Kim. I am a developer with an eye for design. My days consist mostly of developing web applications. On the side, I also design them.</p>
-            <p>Before all that I was a college student dabbling in freelance doing branding and print design, as well as web work. I love to do a bit of everything!</p>
-            <p></p>
-            <p>I have a BS in Computer Graphics Technology and a minor in Art &amp; Design from Purdue University. My experience with digital and traditional art combined with my technical front end skills allows me to create beautiful, functional, user-centered web applications.</p>
+        <!-- left box -->
+        <div id="portfolio" class="col-md-10 col-sm-9 col-xs-12 pull-left">
+          <!-- What I've Done -->
+          <div id="what" class="section">
+            <!-- <h2 class="heading"><span>What I've Done</span></h2> -->
+            <div class="row hover-link">
+              <a href="#" class="col-xs-12">
+                <img src="https://unsplash.it/1700/500" alt="">
+                <div>
+                  <h3>Title of Project</h3>
+                  <p>Web design, print design, logo, branding, Adobe Photoshop</p>
+                </div>
+              </a>
+            </div>
+
+            <div class="row hover-link">
+              <a href="#" class="col-xs-12">
+                <img src="https://unsplash.it/1700/500" alt="">
+                <div>
+                  <h3>Another Project</h3>
+                  <p>Web design, print design, logo, branding, Adobe Photoshop, Web design, print design, logo, branding, Adobe Photoshop</p>
+                </div>
+              </a>
+            </div>
+
+            <div class="row hover-link">
+              <a href="#" class="col-xs-12">
+                <img src="https://unsplash.it/1700/500" alt="">
+                <div>
+                  <h3>Yet Another Project but this one has a really long title that I hope will wrap on smaller screens</h3>
+                  <p>Web design, print design, logo, branding, Adobe Photoshop</p>
+                </div>
+              </a>
+            </div>
           </div>
-        </div>
-      </div>
 
-      <!-- What I've Done -->
-      <div id="what" class="section">
-        <h2 class="heading"><span>What I've Done</span></h2>
-        <div class="row hover-link">
-          <a href="#" class="col-md-10 col-md-push-1 col-xs-12">
-            <img src="https://unsplash.it/1700/500" alt="">
-            <div>
-              <h3>Title of Project</h3>
-              <p>Web design, print design, logo, branding, Adobe Photoshop</p>
+          <!-- Who I Am -->
+          <div id="who" class="section hidden">
+            <!-- <h2 class="heading"><span>Who I Am</span></h2> -->
+            <div class="row">
+              <img class="col-md-3 col-md-push-8 col-sm-6 col-sm-push-6 col-xs-12" src="images/kim-1976.jpg" alt="">
+              <div class="content col-md-6 col-md-pull-2 col-sm-6 col-sm-pull-6">
+                <p>Hi! My name is Kim. I am a developer with an eye for design. My days consist mostly of developing web applications. On the side, I also design them.</p>
+                <p>Before all that I was a college student dabbling in freelance doing branding and print design, as well as web work. I love to do a bit of everything!</p>
+                <p></p>
+                <p>I have a BS in Computer Graphics Technology and a minor in Art &amp; Design from Purdue University. My experience with digital and traditional art combined with my technical front end skills allows me to create beautiful, functional, user-centered web applications.</p>
+              </div>
             </div>
-          </a>
-        </div>
-
-        <div class="row hover-link">
-          <a href="#" class="col-md-10 col-md-push-1 col-xs-12">
-            <img src="https://unsplash.it/1700/500" alt="">
-            <div>
-              <h3>Another Project</h3>
-              <p>Web design, print design, logo, branding, Adobe Photoshop, Web design, print design, logo, branding, Adobe Photoshop</p>
-            </div>
-          </a>
-        </div>
-
-        <div class="row hover-link">
-          <a href="#" class="col-md-10 col-md-push-1 col-xs-12">
-            <img src="https://unsplash.it/1700/500" alt="">
-            <div>
-              <h3>Yet Another Project but this one has a really long title that I hope will wrap on smaller screens</h3>
-              <p>Web design, print design, logo, branding, Adobe Photoshop</p>
-            </div>
-          </a>
-        </div>
-      </div>
-
-      <!-- Contact -->
-      <div id="contact" class="section">
-        <h2 class="heading"><span>Contact</span></h2>
-        <div class="row">
-          <div class="col-md-10 col-md-push-1 col-xs-12">
-            <p><a href="mailto:hello@kimhajduch.com">Say hello</a> and check me out on <a href="https://www.linkedin.com/in/kimhajduch">LinkedIn</a></p>
           </div>
+
+          <!-- Contact -->
+          <!-- <div id="contact" class="section">
+            <h2 class="heading"><span>Contact</span></h2>
+            <div class="row">
+              <div class="col-md-10 col-md-push-1 col-xs-12">
+                <p><a href="mailto:hello@kimhajduch.com">Say hello</a> and check me out on <a href="https://www.linkedin.com/in/kimhajduch">LinkedIn</a></p>
+              </div>
+            </div>
+          </div> -->
         </div>
       </div>
     </div>
 
     <footer>
-      Kim Hajduch © 2013-2016
+      <div class="row">
+        <div class="col-md-10 col-md-push-1 col-xs-12">
+          <p>Kim Hajduch © 2013-2016 | <a href="mailto:hajduch.k@gmail.com">email</a> | <a href="https://www.linkedin.com/in/kimhajduch">LinkedIn</a></p>
+        </div>
+      </div>
     </footer>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/function.js"></script>
   </body>
 </html>

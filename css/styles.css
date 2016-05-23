@@ -4,6 +4,15 @@ body {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
 }
+h1,
+.name {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
+  text-transform: lowercase;
+  letter-spacing: -1px;
+  color: #000;
+  font-size: 36px;
+}
 h2 {
   font-family: 'Rubik', sans-serif;
   font-weight: 700;
@@ -22,20 +31,24 @@ p {
   font-weight: 300;
   font-size: 1.2em;
 }
+a {
+  color: #015E19;
+  cursor: pointer;
+}
 .no-padding {
   padding: 0 !important;
 }
 .no-margin {
   margin: 0 !important;
 }
+.hidden {
+  display: none;
+}
 .container header {
   text-align: center;
 }
 .container header img {
   margin: 0 auto;
-}
-.container .section {
-  margin: 50px auto 0 auto;
 }
 .container .section h2.heading {
   border-bottom: 2px solid #000;
@@ -87,10 +100,126 @@ p {
     z-index: 0;
   }
 }
-.container .section#contact {
-  margin-bottom: 30px;
+a:hover,
+a:focus {
+  color: #828282;
+  text-decoration: none;
+}
+.nav > li > a {
+  padding-left: 0;
+  color: #c2c2c2;
+  text-transform: uppercase;
+}
+.nav > li > a:hover,
+.nav > li > a:focus {
+  text-decoration: none;
+  background-color: transparent;
+}
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus {
+  background-color: transparent;
+  color: #015E19;
+}
+li.contact {
+  padding-top: 20px;
+}
+/* Effect 1: Brackets */
+.cl-effect-1 a::before,
+.cl-effect-1 a::after {
+  display: inline-block;
+  opacity: 0;
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+  -moz-transition: -moz-transform 0.3s, opacity 0.2s;
+  transition: transform 0.3s, opacity 0.2s;
+}
+.cl-effect-1 a::before {
+  margin-right: 10px;
+  content: '[';
+  -webkit-transform: translateX(20px);
+  -moz-transform: translateX(20px);
+  transform: translateX(20px);
+}
+.cl-effect-1 a::after {
+  margin-left: 10px;
+  content: ']';
+  -webkit-transform: translateX(-20px);
+  -moz-transform: translateX(-20px);
+  transform: translateX(-20px);
+}
+.cl-effect-1 a:hover::before,
+.cl-effect-1 a:hover::after,
+.cl-effect-1 a:focus::before,
+.cl-effect-1 a:focus::after {
+  opacity: 1;
+  -webkit-transform: translateX(0px);
+  -moz-transform: translateX(0px);
+  transform: translateX(0px);
+}
+.navbar-default {
+  background-color: transparent;
+  border-color: transparent;
+}
+.navbar-default .navbar-brand {
+  color: #000;
+  font-size: 36px;
+  padding-left: 0;
+  cursor: text;
+  display: none;
+}
+.navbar-default .navbar-brand:hover {
+  color: #015E19;
+}
+.navbar-default .navbar-toggle {
+  border-color: #c2c2c2;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: transparent;
+  border-color: #015E19;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #c2c2c2;
+}
+.navbar-default .navbar-toggle:hover .icon-bar,
+.navbar-default .navbar-toggle:focus .icon-bar {
+  background-color: #015E19;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border: 0;
 }
 footer {
   margin: 10px;
   text-align: center;
+}
+footer a {
+  text-decoration: underline;
+}
+@media (min-width: 768px) {
+  .container .section#what .hover-link a div {
+    padding: 5% 10%;
+  }
+}
+@media (min-width: 992px) {
+  .container .section#what .hover-link a div {
+    padding: 10%;
+  }
+}
+@media (max-width: 767px) {
+  li.contact {
+    padding-top: 0;
+  }
+  header.to-hide {
+    display: none;
+  }
+  nav.navbar-default {
+    margin: 20px auto 10px auto;
+  }
+  .navbar-toggle {
+    margin-right: 0;
+  }
+  .navbar-default .navbar-brand {
+    display: block;
+  }
 }
