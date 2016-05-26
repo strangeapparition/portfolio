@@ -107,7 +107,7 @@ a {
       }
     }
 
-    &#what {
+    &.what {
 
       .row {
         margin-bottom: 40px;
@@ -154,6 +154,11 @@ a {
             }
           }
         }
+      }
+
+      &.filter-print,
+      &.filter-art {
+        display: none;
       }
     }
   }
@@ -278,14 +283,14 @@ footer {
 
 // No smaller than s
 @media (min-width: 768px) {
-  .container .section#what .hover-link a div {
+  .container .section.what .hover-link a div {
     padding: 5% 10%;
   }
 }
 
 // No smaller than m
 @media (min-width: 992px) {
-  .container .section#what .hover-link a div {
+  .container .section.what .hover-link a div {
     padding: 10%;
   }
 }
