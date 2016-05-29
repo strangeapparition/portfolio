@@ -118,8 +118,8 @@ a {
     z-index: 0;
   }
 }
-.container .section.what.filter-print,
-.container .section.what.filter-art {
+.container .section.what#section-filter-print,
+.container .section.what#section-filter-art {
   display: none;
 }
 a:hover,
