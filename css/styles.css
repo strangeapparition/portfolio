@@ -31,6 +31,16 @@ h1:hover .outline,
   -webkit-text-stroke-width: 1.5px;
   -webkit-text-stroke-color: #015E19;
 }
+@supports (-ms-accelerator:true) {
+  h1 .outline,
+  .name .outline {
+    -webkit-text-fill-color: #000;
+  }
+  h1:hover .outline,
+  .name:hover .outline {
+    -webkit-text-fill-color: #015E19;
+  }
+}
 h2 {
   font-family: 'Rubik', sans-serif;
   font-weight: 700;

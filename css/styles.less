@@ -32,6 +32,21 @@ h1,
   }
 }
 
+@supports (-ms-accelerator:true) {
+  h1,
+  .name {
+    .outline {
+      -webkit-text-fill-color: #000;
+    }
+
+    &:hover {
+      .outline {
+        -webkit-text-fill-color: #015E19;
+      }
+    }
+  }
+}
+
 h2 {
   font-family: 'Rubik', sans-serif;
   font-weight: 700;
@@ -327,6 +342,7 @@ footer {
     padding: 0;
   }
 }
+
 .container {
   max-width: 780px !important;
 }
