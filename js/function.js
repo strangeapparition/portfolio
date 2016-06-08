@@ -10,6 +10,6 @@ $(document).ready(function() {
     $('.navbar li.active').removeClass('active');
     $(this).addClass('active');
     var filter = $(this).find('a').attr('id');
-    changeSection(filter);
+    // changeSection(filter);
   });
 });

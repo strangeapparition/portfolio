@@ -19,16 +19,16 @@ h1,
     -webkit-text-stroke-width: 1.5px;
     -webkit-text-stroke-color: #000;
   }
+}
 
-  &:hover {
+.name:hover {
+  color: #015E19;
+
+  .outline {
     color: #015E19;
-
-    .outline {
-      color: #015E19;
-      -webkit-text-fill-color: #fff;
-      -webkit-text-stroke-width: 1.5px;
-      -webkit-text-stroke-color: #015E19;
-    }
+    -webkit-text-fill-color: #fff;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: #015E19;
   }
 }
 
@@ -173,7 +173,7 @@ a {
 
       &#section-filter-print,
       &#section-filter-art {
-        display: none;
+        // display: none;
       }
     }
   }
@@ -299,19 +299,23 @@ footer {
 // No smaller than s
 @media (min-width: 768px) {
   .container .section.what .hover-link a div {
-    padding: 5% 10%;
+    padding: 7% 10%;
   }
 }
 
 // No smaller than m
 @media (min-width: 992px) {
   .container .section.what .hover-link a div {
-    padding: 5%;
+    padding: 7%;
   }
 }
 
 // No bigger than xs
 @media (max-width: 767px) {
+  h3 {
+    margin-bottom: 0;
+  }
+
   li.contact {
     padding-top: 0;
   }

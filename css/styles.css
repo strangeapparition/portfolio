@@ -20,11 +20,9 @@ h1 .outline,
   -webkit-text-stroke-width: 1.5px;
   -webkit-text-stroke-color: #000;
 }
-h1:hover,
 .name:hover {
   color: #015E19;
 }
-h1:hover .outline,
 .name:hover .outline {
   color: #015E19;
   -webkit-text-fill-color: #fff;
@@ -128,10 +126,6 @@ a {
     z-index: 0;
   }
 }
-.container .section.what#section-filter-print,
-.container .section.what#section-filter-art {
-  display: none;
-}
 a:hover,
 a:focus {
   color: #828282;
@@ -231,15 +225,18 @@ footer a {
 }
 @media (min-width: 768px) {
   .container .section.what .hover-link a div {
-    padding: 5% 10%;
+    padding: 7% 10%;
   }
 }
 @media (min-width: 992px) {
   .container .section.what .hover-link a div {
-    padding: 5%;
+    padding: 7%;
   }
 }
 @media (max-width: 767px) {
+  h3 {
+    margin-bottom: 0;
+  }
   li.contact {
     padding-top: 0;
   }

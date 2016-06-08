@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Kim Hajduch | About</title>
+    <title>Kim Hajduch | Tea Infuser</title>
 
     <!-- Bootstrap -->
+    <link href="lightbox2-master/dist/css/lightbox.min.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Rubik:900,700,500' rel='stylesheet' type='text/css'>
@@ -47,8 +48,8 @@
                 <!-- <li class="filter active"><a id="filter-all">All</a></li> -->
                 <li class="filter"><a href="index.html">Web</a></li>
                 <li class="filter"><a href="print.html">Print</a></li>
-                <li class="filter"><a href="art.html">Art</a></li>
-                <li class="about active"><a href="about.html">About</a></li>
+                <li class="filter active"><a href="art.html">Art</a></li>
+                <li class="about"><a href="about.html">About</a></li>
               </ul>
             </div>
           </nav>
@@ -61,27 +62,12 @@
             <!-- <h2 class="heading"><span>Who I Am</span></h2> -->
             <div class="row">
               <div class="content col-xs-12">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a lacus ac quam auctor volutpat consequat sit amet odio. Vivamus eget semper diam. Integer mollis vel mi at semper. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam eget lacus eros. Integer sed tempus ante. Proin maximus ligula in lacinia dictum. In eu quam a elit sagittis lobortis. Nunc condimentum, metus in ultrices posuere, tortor justo iaculis nisl, ut ornare odio diam id enim. Quisque efficitur tristique iaculis. Sed et sapien congue, dignissim quam quis, elementum tellus. Nullam id vehicula mauris. Fusce purus nulla, elementum eu faucibus non, egestas quis mauris. Pellentesque id quam commodo, condimentum est at, feugiat lectus.</p>
+                <p>Inspired by the videogame "The Legend of Zelda," this copper and brass hollow form tea infuser was made entirely by hand.</p>
               </div>
             </div>
             <div class="row">
-              <img class="col-sm-3 col-xs-6" src="images/denali.jpg" alt="Denali">
-              <img class="col-sm-3 col-xs-6" src="images/self.jpg" alt="Oh hey it's me">
-              <img class="col-sm-3 col-xs-6" src="images/taka.jpg" alt="My cat Taka">
-              <img class="col-sm-3 col-xs-6" src="images/river.jpg" alt="A river in Alaska">
-            </div>
-          </div>
-          <!-- Who I Am -->
-          <div id="who" class="section hidden">
-            <!-- <h2 class="heading"><span>Who I Am</span></h2> -->
-            <div class="row">
-              <!-- <img class="col-md-3 col-md-push-8 col-sm-6 col-sm-push-6 col-xs-12" src="images/kim-1976.jpg" alt=""> -->
-              <div class="content col-md-6 col-md-pull-2 col-sm-6 col-sm-pull-6">
-                <p>Hi! My name is Kim. I am a developer with an eye for design. My days consist mostly of developing web applications. On the side, I also design them.</p>
-                <p>Before all that I was a college student dabbling in freelance doing branding and print design, as well as web work. I love to do a bit of everything!</p>
-                <p></p>
-                <p>I have a BS in Computer Graphics Technology and a minor in Art &amp; Design from Purdue University. My experience with digital and traditional art combined with my technical front end skills allows me to create beautiful, functional, user-centered web applications.</p>
-              </div>
+              <a href="images/art/main/ocarina1.jpg" data-lightbox="infuser"><img class="col-sm-6 col-xs-12" src="images/art/main/ocarina1.jpg" alt="Tea Infuser"></a>
+              <a href="images/art/main/ocarina2.jpg" data-lightbox="infuser" data-title="Detail of front, hinge, and clasp."><img class="col-sm-6 col-xs-12" src="images/art/main/ocarina2.jpg" alt="Tea Infuser Details"></a>
             </div>
           </div>
         </div>
@@ -99,7 +85,14 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="lightbox2-master/dist/js/lightbox.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/function.js"></script>
+    <script>
+      lightbox.option({
+        'wrapAround': true,
+        'alwaysShowNavOnTouchDevices': true
+      })
+    </script>
   </body>
 </html>
