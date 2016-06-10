@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Kim Hajduch</title>
+    <title>Kim Hajduch | Resource Management</title>
 
     <!-- Bootstrap -->
+    <link href="lightbox2-master/dist/css/lightbox.min.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Rubik:900,700,500' rel='stylesheet' type='text/css'>
@@ -56,88 +57,16 @@
 
         <!-- left box -->
         <div id="portfolio" class="col-sm-9 col-xs-12 pull-left">
-          <!-- What I've Done -->
-          <!-- Print -->
-          <div id="section-filter-print" class="section what">
-            <!-- <h2 class="heading"><span>What I've Done</span></h2> -->
-            <div class="row hover-link">
-              <a href="monarch.html" class="col-xs-12">
-                <img src="images/print/monarch-wide.jpg" alt="Monarch Migration magazine spread">
-                <div>
-                  <h3>Monarch Migration</h3>
-                  <p>Print design, magazine spread, Adobe InDesign</p>
-                </div>
-              </a>
-            </div>
-
-            <div class="row hover-link">
-              <a href="town-hall.html" class="col-xs-12">
-                <img src="images/print/logo-wide.jpg" alt="Town Hall Meeting">
-                <div>
-                  <h3>Town Hall Meeting</h3>
-                  <p>Print design, Adobe Illustrator</p>
-                </div>
-              </a>
-            </div>
-
-            <div class="row hover-link">
-              <a href="pilot.html" class="col-xs-12">
-                <img src="images/print/pilot-wide.jpg" alt="Pilot Business Card">
-                <div>
-                  <h3>Pilot's Business Card</h3>
-                  <p>Print design, business card, Adobe Illustrator</p>
-                </div>
-              </a>
-            </div>
-
-            <!-- <div class="row hover-link">
-              <a href="brass-choir.html" class="col-xs-12">
-                <img src="images/print/brass-choir-wide.jpg" alt="Brass Choir Flyer">
-                <div>
-                  <h3>Brass Choir</h3>
-                  <p>Print design, flyer, Adobe InDesign</p>
-                </div>
-              </a>
-            </div> -->
-
-            <!-- <div class="row hover-link">
-              <a href="management.html" class="col-xs-12">
-                <img src="images/print/stacks-wide.jpg" alt="Resource Management logos">
-                <div>
-                  <h3>Resource Management</h3>
-                  <p>Print design, logo concepts, Adobe Illustrator</p>
-                </div>
-              </a>
-            </div> -->
-
-            <div class="row hover-link">
-              <a href="connections.html" class="col-xs-12">
-                <img src="images/print/connect-wide.jpg" alt="Connections Management branding">
-                <div>
-                  <h3>Connections Management</h3>
-                  <p>Print design, logo, branding, Adobe Photoshop, InDesign</p>
-                </div>
-              </a>
-            </div>
-
-            <!-- <div class="row hover-link">
-              <a href="#" class="col-xs-12">
-                <img src="images/print/brochure-wide.jpg" alt="Better Birdhouses brochure">
-                <div>
-                  <h3>Better Birdhouses</h3>
-                  <p>Print design, gatefold brochure, Adobe InDesign</p>
-                </div>
-              </a>
-            </div> -->
-
-            <div class="row hover-link">
-              <a href="gear.html" class="col-xs-12">
-                <img src="images/print/book-wide.jpg" alt="The Gear book">
-                <div>
-                  <h3>The Gear</h3>
-                  <p>Print design, book layout, Adobe Photoshop, InDesign</p>
-                </div>
-              </a>
+          <!-- Who I Am -->
+          <div id="who" class="section">
+            <!-- <h2 class="heading"><span>Who I Am</span></h2> -->
+            <div class="row">
+              <div class="content col-sm-6 col-sm-push-6 col-xs-12">
+                <p>Logo concepts created for a property management company. The client approached me about coming up with some ideas and after weeks of silence they finally said they didn't have any feedback.</p>
+              </div>
+            <!-- </div>
+            <div class="row"> -->
+              <a class="lightbox-link" href="images/print/main/logo.jpg" data-lightbox="lightbox"><img class="col-sm-6 col-sm-pull-6 col-xs-12" src="images/print/main/logo.jpg" alt="Town Hall Meeting logo"></a>
             </div>
           </div>
         </div>
@@ -155,7 +84,14 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="lightbox2-master/dist/js/lightbox.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/function.js"></script>
+    <script>
+      lightbox.option({
+        'wrapAround': true,
+        'alwaysShowNavOnTouchDevices': true
+      })
+    </script>
   </body>
 </html>
