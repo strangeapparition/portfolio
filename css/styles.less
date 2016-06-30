@@ -171,9 +171,16 @@ a {
         }
       }
 
-      &#section-filter-print,
-      &#section-filter-art {
-        // display: none;
+      &.web .hover-link a {
+        div {
+          padding-top: 20%;
+        }
+
+        @media (max-width: 767px) {
+          div {
+            padding: 0;
+          }
+        }
       }
     }
   }
@@ -301,12 +308,20 @@ footer {
   .container .section.what .hover-link a div {
     padding: 7% 10%;
   }
+
+  .container .section.what.web .hover-link a div {
+    padding: 20% 10%;
+  }
 }
 
 // No smaller than m
 @media (min-width: 992px) {
   .container .section.what .hover-link a div {
     padding: 7%;
+  }
+
+  .container .section.what.web .hover-link a div {
+    padding: 20% 10%;
   }
 }
 
