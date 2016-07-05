@@ -139,6 +139,9 @@ p.caption {
   color: #c2c2c2;
   text-align: center;
 }
+div.row.jukebot-old a > img:nth-child(3) {
+  clear: both;
+}
 a:hover,
 a:focus {
   color: #828282;
