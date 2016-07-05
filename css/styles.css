@@ -134,6 +134,11 @@ a {
     padding: 0;
   }
 }
+p.caption {
+  font-size: 13px;
+  color: #c2c2c2;
+  text-align: center;
+}
 a:hover,
 a:focus {
   color: #828282;
