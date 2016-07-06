@@ -142,6 +142,11 @@ p.caption {
 div.row.jukebot-old a > img:nth-child(3) {
   clear: both;
 }
+@media (max-width: 767px) {
+  div.row.jukebot-sketches .col-sm-3 {
+    padding-left: 0;
+  }
+}
 a:hover,
 a:focus {
   color: #828282;
