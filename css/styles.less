@@ -71,6 +71,16 @@ p {
 a {
   color: #015E19;
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: #828282;
+    text-decoration: none;
+  }
+
+  &.bold-link {
+    font-weight: bold;
+  }
 }
 
 .no-padding {
@@ -189,10 +199,15 @@ a {
 p.caption {
   font-size: 13px;
   color: #c2c2c2;
-  text-align: center
+  text-align: center;
+  padding-bottom: 20px;
 }
 
 div.row {
+  &.lightbox-row {
+    padding-top: 25px;
+  }
+
   &.jukebot-old {
     a > img:nth-child(3) {
       clear: both;
@@ -206,12 +221,6 @@ div.row {
       }
     }
   }
-}
-
-a:hover,
-a:focus {
-  color: #828282;
-  text-decoration: none;
 }
 
 .nav > li {
