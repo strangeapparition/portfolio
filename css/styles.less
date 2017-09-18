@@ -4,7 +4,12 @@ html, body {
   font-weight: 300;
 }
 
-h1,
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  text-transform: lowercase;
+}
+
 .name {
   font-family: 'Rubik', sans-serif;
   font-weight: 700;
@@ -33,7 +38,7 @@ h1,
 }
 
 @supports (-ms-accelerator:true) {
-  h1,
+  // h1,
   .name {
     .outline {
       -webkit-text-fill-color: #000;
@@ -98,6 +103,10 @@ a {
 .container {
   // background-color: #fff;
 
+  div#portfolio {
+    margin-top: 10px;
+  }
+
   header {
     text-align: center;
 
@@ -129,6 +138,18 @@ a {
 
       img {
         padding-bottom: 20px;
+      }
+
+      &.masonry-grid {
+
+        .row > div {
+          padding-top: 15px;
+          padding-bottom: 15px;
+        }
+
+        img {
+          padding: 0;
+        }
       }
     }
 
@@ -181,17 +202,17 @@ a {
         }
       }
 
-      &.web .hover-link a {
-        div {
-          padding-top: 20%;
-        }
+      // &.web .hover-link a {
+      //   div {
+      //     padding-top: 20%;
+      //   }
 
-        @media (max-width: 767px) {
-          div {
-            padding: 0;
-          }
-        }
-      }
+      //   @media (max-width: 767px) {
+      //     div {
+      //       padding: 0;
+      //     }
+      //   }
+      // }
     }
   }
 }

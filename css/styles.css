@@ -4,7 +4,11 @@ body {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
 }
-h1,
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  text-transform: lowercase;
+}
 .name {
   font-family: 'Rubik', sans-serif;
   font-weight: 700;
@@ -13,7 +17,6 @@ h1,
   color: #000;
   font-size: 36px;
 }
-h1 .outline,
 .name .outline {
   color: #000;
   -webkit-text-fill-color: #fff;
@@ -30,11 +33,9 @@ h1 .outline,
   -webkit-text-stroke-color: #015E19;
 }
 @supports (-ms-accelerator:true) {
-  h1 .outline,
   .name .outline {
     -webkit-text-fill-color: #000;
   }
-  h1:hover .outline,
   .name:hover .outline {
     -webkit-text-fill-color: #015E19;
   }
@@ -78,6 +79,9 @@ a.bold-link {
 .hidden {
   display: none;
 }
+.container div#portfolio {
+  margin-top: 10px;
+}
 .container header {
   text-align: center;
 }
@@ -95,6 +99,13 @@ a.bold-link {
 }
 .container .section#who img {
   padding-bottom: 20px;
+}
+.container .section#who.masonry-grid .row > div {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.container .section#who.masonry-grid img {
+  padding: 0;
 }
 .container .section.what .row {
   margin-bottom: 40px;
@@ -132,14 +143,6 @@ a.bold-link {
     background-color: transparent;
     color: #333;
     z-index: 0;
-  }
-}
-.container .section.what.web .hover-link a div {
-  padding-top: 20%;
-}
-@media (max-width: 767px) {
-  .container .section.what.web .hover-link a div {
-    padding: 0;
   }
 }
 p.caption {
