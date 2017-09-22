@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Kim Hajduch</title>
+    <title>Kim Hajduch | Save-the-Date</title>
     <link rel="icon" type="image/png" href="favicon.png" />
 
     <!-- Bootstrap -->
+    <link href="css/lightbox.min.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Rubik:900,700,500' rel='stylesheet' type='text/css'>
@@ -24,7 +25,7 @@
   <body>
     <header class="header to-hide">
       <div class="container">
-        <h1><a class="name" href="index.html"><span class="outline">Kim</span> Hajduch</a></h1>
+        <h1><a class="name" href="index.html"><span class="outline">Kim</span> Hajduch</a> | Save-the-Date</h1>
         <!-- <img class="col-md-6 col-md-push-3 col-sm-6 col-sm-push-3 col-xs-12" src="https://unsplash.it/1000/160" alt=""> -->
       </div>
     </header>
@@ -45,7 +46,7 @@
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav nav-pills cl-effect-1">
-                <li class="filter active"><a href="index.html">Home</a></li>
+                <li class="filter"><a href="index.html">Home</a></li>
                 <li class="about"><a href="about.html">About</a></li>
               </ul>
             </div>
@@ -54,59 +55,25 @@
 
         <!-- left box -->
         <div id="portfolio" class="col-sm-9 col-xs-12 pull-left">
-          <!-- What I've Done -->
-          <!-- Web -->
-          <div id="section-filter-web" class="section what">
-            <!-- <h2 class="heading"><span>What I've Done</span></h2> -->
-            <div class="row hover-link">
-              <a href="wedding.html" class="col-xs-12">
-                <img src="images/print/program.jpg" alt="Save-the-Date">
-                <div>
-                  <h3>Save-the-Date</h3>
-                  <p>Print design, program, menu card, Adobe InDesign</p>
-                </div>
-              </a>
+          <!-- Who I Am -->
+          <div id="who" class="section">
+            <!-- <h2 class="heading"><span>Who I Am</span></h2> -->
+            <div class="row">
+              <div class="content col-xs-12">
+                <p>A couple of dear friends approached a myself and another friend to design their Save-the-Dates, invitations, and wedding programs. They gave us examples of other styles they liked and we worked to create a personalized style just for them and their special day. I'm so happy with how it turned out, and we recieved many compliments at the wedding. It was truly a fulfilling project to work on.</p>
+              </div>
+            <!-- </div>
+            <div class="row jukebot-old lightbox-row"> -->
+              <a class="lightbox-link" href="images/print/main/save-the-date.jpg" data-lightbox="lightbox" data-title="The Sate-the-Dates that were sent to all guests.">
+                <img class="col-sm-4 col-xs-12" src="images/print/main/save-the-date.jpg" alt="Save-the-Dates"></a>
+              <a class="lightbox-link" href="images/print/main/program.jpg" data-lightbox="lightbox" data-title="The program contained the order of the mass, names of family members and the wedding party, as well as directions to the reception.">
+                <img class="col-sm-4 col-xs-12" src="images/print/main/program.jpg" alt="Program"></a>
+              <a class="lightbox-link" href="images/print/main/menu.jpg" data-lightbox="lightbox" data-title="These menu cards were placed on every plate at the reception.">
+                <img class="col-sm-4 col-xs-12" src="images/print/main/menu.jpg" alt="Menu Card"></a>
             </div>
-
-            <div class="row hover-link">
-              <a href="camera.html" class="col-xs-12">
-                <img src="images/print/camera-wide.jpg" alt="Photography Logo">
-                <div>
-                  <h3>Photography Logo</h3>
-                  <p>Print design, business card, Adobe Illustrator</p>
-                </div>
-              </a>
-            </div>
-
-            <div class="row hover-link">
-              <a href="jukebot.html" class="col-xs-12">
-                <img src="images/web/jukebot-sm-wide.jpg" alt="Screenshot of Jukebot on a laptop">
-                <div>
-                  <h3>Jukebot</h3>
-                  <p>Web design, logo, web application, Adobe Illustrator</p>
-                </div>
-              </a>
-            </div>
-
-            <div class="row hover-link">
-              <a href="pilot.html" class="col-xs-12">
-                <img src="images/print/pilot-wide.jpg" alt="Business Card">
-                <div>
-                  <h3>Business Card</h3>
-                  <p>Print design, business card, Adobe Illustrator</p>
-                </div>
-              </a>
-            </div>
-
-            <div class="row hover-link">
-              <a href="misc.html" class="col-xs-12">
-                <img src="images/art/art.jpg" alt="Misc Art">
-                <div>
-                  <h3>Miscellaneous Art</h3>
-                  <p>Adobe Illustrator, Photoshop, drawing, painting, metalworking</p>
-                </div>
-              </a>
-            </div>
+            <!-- <div class="row">
+              <p class="caption col-sm-8 col-sm-push-2 col-xs-12">These are some of the designs for the first iteration. The core idea remained but the interface needed work.</p>
+            </div> -->
           </div>
         </div>
       </div>
@@ -123,7 +90,14 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/lightbox.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/function.js"></script>
+    <script>
+      lightbox.option({
+        'wrapAround': true,
+        'alwaysShowNavOnTouchDevices': true
+      })
+    </script>
   </body>
 </html>
